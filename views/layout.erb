@@ -10,15 +10,16 @@
     <link href="images/icons/favicon.png" rel="shortcut icon" type="image/x-icon">
     <meta charset="utf-8">
     <meta name="description" content="Web developer in training at Ada Developers Academy">
-    <!-- <link href="css/reset.css" type="text/css" rel="stylesheet"> -->
+    <link href="css/reset.css" type="text/css" rel="stylesheet">
     <link href="css/style.css" type="text/css" rel="stylesheet">
+    <link href="css/jquery.fullPage.css" type="text/css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="js/jquery.fullPage.min.js"></script>
     <script src="js/tply.min.js"></script>
   </head>
   <body>
     <%= erb :header %>
-    <div class="content">
-      <%= yield %>
-    </div>
+    <%= yield %>
     <%= erb :footer %>
   </body>
 </html>

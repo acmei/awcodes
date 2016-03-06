@@ -1,15 +1,24 @@
-/* Homepage */
+/* Overall */
 
-.intro {
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-direction: column;
-  flex-direction: column;
-  -webkit-align-items: center;
-  align-items: center;
-  -webkit-justify-content: center;
-  justify-content: center;
+body {
+  font-family: Arial, sans-serif;
+  font-size:0.9rem;
+  line-height: 1.2rem;
+}
+
+/* Typography */
+
+h1 {
+  margin-bottom: 1rem;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+/* Section 1 - About Me */
+
+#about-me {
+  margin: auto;
+  width: 55%;
 }
 
 #source {
@@ -17,5 +26,10 @@
 }
 
 #destination {
-  border: 1px solid #f00;
+}
+
+/* Section 2 - Projects */
+
+.slide {
+  text-align: center;
 }

@@ -1,12 +1,37 @@
-<div id="source">
-  <type>
-    I'm an Adie at <a href="http://adadevelopersacademy.org/">Ada Developers Academy</a>, studying to become a <a href="/projects">web developer</a>. Sometimes I <a href="/blog">blog</a> about my misadventures. I'm also an amateur <a href="/photography">photographer</a>. If you'd like to get in touch with me, try <a href="/contact">here</a>.
-  </type>
-</div>
-<div id="destination">
+<div id="fullpage">
+  <div class="section">
+    <section id="about-me">
+      <div id="source">
+        <type>
+          <h1>Greetings. My name is Anita.</h1>
+        </type>
+      </div>
+
+      <div id="destination">
+      </div>
+
+      <p>
+      I'm an Adie at <a href="http://adadevelopersacademy.org/">Ada Developers Academy</a>, studying to become a <a href="/projects">web developer</a>. Sometimes I <a href="/blog">blog</a> about my misadventures. I'm also an amateur <a href="/photography">photographer</a>. If you'd like to get in touch with me, try <a href="/contact">here</a>.
+      </p>
+    </section>
+  </div>
+  <div class="section">
+    <div class="slide" id="project1">Slide 1</div>
+    <div class="slide" id="project2">Slide 2</div>
+    <div class="slide" id="project3">Slide 3</div>
+    <div class="slide" id="project4">Slide 4</div>
+  </div>
 </div>
 
 <script>
+  $(document).ready(function() {
+    $('#fullpage').fullpage(
+      {
+        sectionsColor : ['#c493ec', '#f23940']
+      }
+    );
+  });
+
   tply.animate(
     document.getElementById("source"),
     document.getElementById("destination"));
