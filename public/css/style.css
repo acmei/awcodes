@@ -1,12 +1,25 @@
-/* Overall */
+/* ------------------------------ Base Style ---------------------------------*/
 
 body {
   font-family: Arial, sans-serif;
+  color: #ccc;
   font-size:0.9rem;
-  line-height: 1.2rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.1rem;
 }
 
-/* Typography */
+a:link, a:active, a:visited {
+  color: #5d93ab;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #fff;
+  font-style: italic;
+  text-decoration: underline;
+}
+
+/* ------------------------------- Typography --------------------------------*/
 
 h1, .typed {
   margin-bottom: 3rem;
@@ -14,52 +27,88 @@ h1, .typed {
   font-size: 1.5rem;
 }
 
-/* Animated Typed Cursor */
-.typed-cursor{
-    opacity: 1;
-    padding-left: 0.2rem;
-    font-size: 1.35rem;
-    -webkit-animation: blink 0.8s infinite;
-    -moz-animation: blink 0.8s infinite;
-    animation: blink 0.8s infinite;
+/* --------------------------- Animated Typed Cursor -------------------------*/
+
+.typed-cursor {
+  opacity: 1;
+  padding-left: 0.45rem;
+  font-size: 2.45rem;
+
+  -webkit-animation: blink 0.7s infinite;
+  -moz-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite;
 }
-@keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
+
+@keyframes blink {
+  0% { opacity:1; }
+  50% { opacity:0; }
+  100% { opacity:1; }
 }
-@-webkit-keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
+
+@-webkit-keyframes blink {
+  0% { opacity:1; }
+  50% { opacity:0; }
+  100% { opacity:1; }
 }
+
 @-moz-keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
+  0% { opacity:1; }
+  50% { opacity:0; }
+  100% { opacity:1; }
 }
 
-/* All Sections */
+/* --------------------------- Section 1 - About Me --------------------------*/
 
-/* Section 1 - About Me */
+#section1 {
+  background: url(/images/night.jpeg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
 
 #about-me {
   margin: auto;
-  width: 55%;
+  /*width: 45%;*/
 }
 
 .intro {
   margin-top: 1rem;
 }
 
-/* Section 2 - Projects */
+/*--------------------------- Section 2 - Projects ---------------------------*/
+
+#section2 {
+  background-color: #000;
+}
 
 .slide {
   text-align: center;
 }
 
-/* Section 3 - Photography */
+/* --------------------------- Media Queries  --------------------------------*/
 
-#photography {
-  text-align: center;
+@media only screen and (min-width : 320px),
+@media only screen and (min-width : 480px) {
+  #about-me {
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width : 768px) {
+  #about-me {
+    width: 70%;
+  }
+}
+
+@media only screen and (min-width : 992px) {
+  #about-me {
+    width: 60%;
+  }
+}
+
+@media only screen and (min-width : 1200px) {
+  #about-me {
+    width: 45%;
+  }
 }
