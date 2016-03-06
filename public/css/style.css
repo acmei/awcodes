@@ -22,7 +22,7 @@ a:hover {
 h1, .typed {
   font-family: 'Cutive Mono', serif;
   font-weight: bold;
-  font-size: 1.55rem;
+  font-size: 1.75rem;
 }
 
 /* --------------------------- Animated Typed Cursor -------------------------*/
@@ -57,34 +57,36 @@ h1, .typed {
 
 /* --------------------------- Section 1 - About Me --------------------------*/
 
-/*#section1 {
+/*#homepage {
   background: url(/images/night.jpeg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-}*/
-
+}
+*/
 #about-me {
   margin: auto;
 }
 
 .intro {
   margin-top: 1rem;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
+  font-weight: lighter;
   line-height: 1.75rem;
   letter-spacing: 0.1rem;
-  font-weight: lighter;
 }
 
 /* Contact/Social Icons */
 
 .social {
   text-align: center;
+  margin-top: 2.25rem;
 }
 
 .social .fa {
-  margin: 1rem;
+  font-size: 1.1rem;
+  margin: 0 1.25rem;
 }
 
 .social a:link, a:active, a:visited {
