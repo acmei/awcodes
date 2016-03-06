@@ -8,11 +8,38 @@ body {
 
 /* Typography */
 
-h1 {
-  margin-bottom: 1rem;
+h1, .typed {
+  margin-bottom: 3rem;
   font-weight: bold;
   font-size: 1.5rem;
 }
+
+/* Animated Typed Cursor */
+.typed-cursor{
+    opacity: 1;
+    padding-left: 0.2rem;
+    font-size: 1.35rem;
+    -webkit-animation: blink 0.8s infinite;
+    -moz-animation: blink 0.8s infinite;
+    animation: blink 0.8s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+/* All Sections */
 
 /* Section 1 - About Me */
 
@@ -21,15 +48,18 @@ h1 {
   width: 55%;
 }
 
-#source {
-  display: none;
-}
-
-#destination {
+.intro {
+  margin-top: 1rem;
 }
 
 /* Section 2 - Projects */
 
 .slide {
+  text-align: center;
+}
+
+/* Section 3 - Photography */
+
+#photography {
   text-align: center;
 }

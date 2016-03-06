@@ -1,25 +1,23 @@
 <div id="fullpage">
   <div class="section">
     <section id="about-me">
-      <div id="source">
-        <type>
-          <h1>Greetings. My name is Anita.</h1>
-        </type>
-      </div>
-
-      <div id="destination">
-      </div>
-
-      <p>
+      <span class="typed">Greetings, my name is Anita.</span>
+      <p class="intro">
       I'm an Adie at <a href="http://adadevelopersacademy.org/">Ada Developers Academy</a>, studying to become a <a href="/projects">web developer</a>. Sometimes I <a href="/blog">blog</a> about my misadventures. I'm also an amateur <a href="/photography">photographer</a>. If you'd like to get in touch with me, try <a href="/contact">here</a>.
       </p>
     </section>
   </div>
   <div class="section">
-    <div class="slide" id="project1">Slide 1</div>
-    <div class="slide" id="project2">Slide 2</div>
-    <div class="slide" id="project3">Slide 3</div>
-    <div class="slide" id="project4">Slide 4</div>
+    <div class="slide" id="project1"><h1>Slide 1</h1></div>
+    <div class="slide" id="project2"><h1>Slide 2</h1></div>
+    <div class="slide" id="project3"><h1>Slide 3</h1></div>
+    <div class="slide" id="project4"><h1>Slide 4</h1></div>
+    <div class="slide" id="project4"><h1>Slide 5</h1></div>
+  </div>
+  <div class="section">
+    <section id="photography">
+      <h1>Photography</h1>
+    </section>
   </div>
 </div>
 
@@ -27,12 +25,19 @@
   $(document).ready(function() {
     $('#fullpage').fullpage(
       {
-        sectionsColor : ['#c493ec', '#f23940']
+        sectionsColor : ['#c493ec', '#f23940', '#2d9e8f']
       }
     );
   });
 
-  tply.animate(
-    document.getElementById("source"),
-    document.getElementById("destination"));
+  $(function(){
+    $(".typed").typed({
+      strings:
+        [
+          "Hi, I'm Atina.",
+          "Greetings, my name is Anita."
+        ],
+      typeSpeed: 0
+    });
+  });
 </script>
