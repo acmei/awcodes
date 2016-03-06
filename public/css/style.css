@@ -1,30 +1,28 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300|Cutive+Mono);
+
 /* ------------------------------ Base Style ---------------------------------*/
 
 body {
-  font-family: Arial, sans-serif;
-  color: #ccc;
-  font-size:0.9rem;
-  line-height: 1.5rem;
-  letter-spacing: 0.1rem;
+  font-family: 'Open Sans', sans-serif;
+  color: #000;
 }
 
 a:link, a:active, a:visited {
-  color: #5d93ab;
+  color: #e3b8ef;
   text-decoration: none;
 }
 
 a:hover {
-  color: #fff;
+  color: #ccc;
   font-style: italic;
-  text-decoration: underline;
 }
 
 /* ------------------------------- Typography --------------------------------*/
 
 h1, .typed {
-  margin-bottom: 3rem;
+  font-family: 'Cutive Mono', serif;
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 1.55rem;
 }
 
 /* --------------------------- Animated Typed Cursor -------------------------*/
@@ -59,22 +57,58 @@ h1, .typed {
 
 /* --------------------------- Section 1 - About Me --------------------------*/
 
-#section1 {
+/*#section1 {
   background: url(/images/night.jpeg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-}
+}*/
 
 #about-me {
   margin: auto;
-  /*width: 45%;*/
 }
 
 .intro {
   margin-top: 1rem;
+  font-size: 0.9rem;
+  line-height: 1.75rem;
+  letter-spacing: 0.1rem;
+  font-weight: lighter;
 }
+
+.social {
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.social .fa {
+  margin: 1.5rem;
+}
+
+.fa-linkedin {
+  color: #0076B7;
+}
+
+.fa-twitter {
+  color: #50ABF1;
+}
+
+.look-down {
+  position: absolute;
+  bottom: 4%;
+  left: 50%;
+}
+
+.fa-angle-down {
+  display: block;
+  font-size: 5rem;
+}
+
+.look-down span {
+  font-size: 0.75rem;
+}
+
 
 /*--------------------------- Section 2 - Projects ---------------------------*/
 
