@@ -106,7 +106,7 @@ i.fa-angle-down {
 
 .projects {
   color: #fff;
-  background: url(../images/pink_rice.png) repeat top right;
+  background: url(../images/gplaypattern.png) repeat top right;
 }
 
 .slide {
@@ -120,7 +120,7 @@ i.fa-angle-down {
 .project {
   position: relative;
   margin: 0 auto;
-  max-width: 720px;
+  max-width: 515px;
   max-height: 450px;
   border-radius: 15px;
   border: 1px solid #ccc;
@@ -158,14 +158,14 @@ i.fa-angle-down {
 }
 
 .content {
-  padding: 4rem;
+  padding: 3rem;
   height: 100%;
 }
 
 .technologies {
   font-style: italic;
   font-size: 0.75rem;
-  margin: 1rem auto;
+  margin: 1.25rem auto;
 }
 
 .content i {
