@@ -7,16 +7,6 @@ body {
   color: #000;
 }
 
-a:link, a:active, a:visited {
-  color: #e3b8ef;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #ccc;
-  font-style: italic;
-}
-
 /* ------------------------------- Typography --------------------------------*/
 
 h1, .typed {
@@ -57,24 +47,27 @@ h1, .typed {
 
 /* --------------------------- Section 1 - About Me --------------------------*/
 
-/*#homepage {
-  background: url(/images/night.jpeg) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-*/
-#about-me {
+.about-me {
   margin: auto;
 }
 
 .intro {
   margin-top: 1rem;
+  /*color: #26BFAD;*/
   font-size: 0.95rem;
   font-weight: lighter;
   line-height: 1.75rem;
   letter-spacing: 0.1rem;
+}
+
+.intro a:link, .intro a:active, .intro a:visited {
+  color: #26BFBB;
+  text-decoration: none;
+}
+
+.intro a:hover {
+  /*text-decoration: underline;*/
+  border-bottom: 1px solid #000;
 }
 
 /* Contact/Social Icons */
@@ -89,8 +82,9 @@ h1, .typed {
   margin: 0 1rem;
 }
 
-.social a:link, a:active, a:visited {
+.social a:link, .social a:active, .social a:visited {
   color: #000;
+  text-decoration: none;
 }
 
 .fa-linkedin {
@@ -113,7 +107,7 @@ i.fa-angle-down {
 
 /*--------------------------- Section 2 - Projects ---------------------------*/
 
-#projects {
+.projects {
   color: #fff;
   background-color: #000;
 }
@@ -126,25 +120,25 @@ i.fa-angle-down {
 
 @media only screen and (min-width : 320px),
 @media only screen and (min-width : 480px) {
-  #about-me {
+  .about-me {
     width: 80%;
   }
 }
 
 @media only screen and (min-width : 768px) {
-  #about-me {
+  .about-me {
     width: 70%;
   }
 }
 
 @media only screen and (min-width : 992px) {
-  #about-me {
+  .about-me {
     width: 60%;
   }
 }
 
 @media only screen and (min-width : 1200px) {
-  #about-me {
+  .about-me {
     width: 45%;
   }
 }

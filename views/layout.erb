@@ -1,11 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= if @title
-      @title = "Anita Wang | #{@title}"
-      else
-        @title = "Anita Wang"
-      end%></title>
+    <title>Anita Wang | Software Developer</title>
 
     <link href="images/icons/favicon.png" rel="shortcut icon" type="image/x-icon">
     <meta charset="utf-8">
@@ -19,8 +15,6 @@
     <script src="js/typed.min.js"></script>
   </head>
   <body>
-    <%= erb :header %>
     <%= yield %>
-    <%= erb :footer %>
   </body>
 </html>
