@@ -57,7 +57,7 @@ h1, .typed {
 /* --------------------------- Section 1 - About Me --------------------------*/
 
 .typing {
-  min-height: 195px;
+  min-height: 205px;
 }
 
 .intro {
@@ -79,7 +79,8 @@ h1, .typed {
 /* Contact/Social Icons */
 
 .social {
-  margin-top: 2.25rem;
+  font-size: 1.35rem;
+  margin-top: 2rem;
 }
 
 .social .fa {
