@@ -2,9 +2,18 @@
 
 /* ------------------------------ Base Style ---------------------------------*/
 
+html {
+  height: 100%;
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
   color: #000;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /* ------------------------------- Typography --------------------------------*/
@@ -13,14 +22,14 @@ h1, .typed {
   font-family: 'Cutive Mono', serif;
   font-weight: bold;
   font-size: 1.75rem;
+  line-height: 2.95rem;
 }
 
 /* --------------------------- Animated Typed Cursor -------------------------*/
 
 .typed-cursor {
   opacity: 1;
-  padding-left: 0.45rem;
-  font-size: 2.45rem;
+  font-size: 1.7rem;
 
   -webkit-animation: blink 0.7s infinite;
   -moz-animation: blink 0.7s infinite;
@@ -47,12 +56,11 @@ h1, .typed {
 
 /* --------------------------- Section 1 - About Me --------------------------*/
 
-.about-me {
-  margin: auto;
+.typing {
+  min-height: 195px;
 }
 
 .intro {
-  margin-top: 1rem;
   font-size: 0.95rem;
   font-weight: lighter;
   line-height: 1.75rem;
@@ -71,7 +79,6 @@ h1, .typed {
 /* Contact/Social Icons */
 
 .social {
-  text-align: center;
   margin-top: 2.25rem;
 }
 
@@ -90,95 +97,6 @@ h1, .typed {
 
 .fa-twitter {
   color: #50ABF1;
-}
-
-/* Look Down Arrow */
-
-i.fa-angle-down {
-  display: block;
-  position: absolute;
-  bottom: 4%;
-  left: 50%;
-  font-size: 1.25rem;
-}
-
-/*--------------------------- Section 2 - Projects ---------------------------*/
-
-.projects {
-  color: #fff;
-  background: url(../images/gplaypattern.png) repeat top right;
-}
-
-.slide {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 0.85rem;
-  font-weight: lighter;
-  line-height: 1.25rem;
-  letter-spacing: 0.1rem;
-}
-
-.project {
-  position: relative;
-  margin: 0 auto;
-  max-width: 515px;
-  max-height: 450px;
-  border-radius: 15px;
-  border: 1px solid #ccc;
-}
-
-.project img {
-  display: block;
-  width: 100%;
-  border-radius: 15px;
-}
-
-.project .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  color: #fff;
-  border-radius: 15px;
-  opacity: 0;
-    -webkit-transition: opacity .2s ease-in-out;
-    -moz-transition: opacity .2s ease-in-out;
-}
-
-.project:hover .overlay {
-  opacity: 1;
-  background: rgba(0, 0, 0, .75);
-}
-
-.content h3 {
-  margin-bottom: 1rem;
-  font-size: 1.2rem;
-  font-weight: bold;
-  text-align: center;
-}
-
-.content {
-  padding: 3rem;
-  height: 100%;
-}
-
-.technologies {
-  font-style: italic;
-  font-size: 0.75rem;
-  margin: 1.25rem auto;
-}
-
-.content i {
-  font-size: 1rem;
-  margin-right: 0.25rem;
-}
-
-.content a:link, .content a:active, .content a:visited {
-  display: block;
-  color: #fff;
-  font-size: 0.75rem;
-  text-decoration: none;
-  margin: 0.25rem auto;
 }
 
 /* --------------------------- Media Queries  --------------------------------*/
