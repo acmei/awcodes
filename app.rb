@@ -1,10 +1,10 @@
-require "sinatra"
-require "sinatra/reloader"
+require 'sinatra'
+require 'sinatra/reloader'
 
 class PersonalSite < Sinatra::Base
   register Sinatra::Reloader
 
-  get "/" do
+  get '/' do
     erb :index
   end
 end
